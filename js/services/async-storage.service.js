@@ -11,8 +11,15 @@ function query(entityType, delay = 500) {
     return new Promise(resolve => setTimeout(() => resolve(entities), delay))
 }
 
+// function get(entityType, entityId) {
+//     return query(entityType).then(entities => entities.find(entity => entity.id === entityId))
+// }
 function get(entityType, entityId) {
-    return query(entityType).then(entities => entities.find(entity => entity.id === entityId))
+    return query(entityType).then(entities => {
+        const entity = entities.find(entity => entity.id === entityId)
+        if (!entity) throw new Error(`Unknown Entity ${entityId}`)
+        return entity
+    })
 }
 
 function post(entityType, newEntity, append = true) {

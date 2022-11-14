@@ -49,11 +49,22 @@
     background-color: rgb(208, 206, 139);
     padding: 10px;
     border-radius: 5px;
-}
+}*/
 .success {
     background-color: rgb(88, 130, 88);
 }
-.fail {
+.error {
     background-color: rgb(187, 104, 104);
 }
-   */
+ 
+.team-img{
+    padding-top: 20px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 5px;
+    height: 300px;
+}
+.about-team{
+    font-size: 1.5em;
+}
+

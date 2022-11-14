@@ -3,8 +3,18 @@
     margin-left: 30px;
     margin-top: 20px;
     font-size: 1.2em;
+    padding-right: 1em;  
+    
+
 }
 .book-filter input{
     color: #14213dff;
     font-size: 1em;
+
+}
+
+.book-filter h1 {
+    display: inline;
+    padding-right: 1em;
+    padding-left: .5em;
 }

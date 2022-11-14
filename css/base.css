@@ -63,3 +63,10 @@ button{
 .router-link-exact-active {
 color: #fca311ff;
 }
+
+.success {
+    background-color: rgb(88, 130, 88);
+}
+.error {
+    background-color: rgb(187, 104, 104);
+}

@@ -8,8 +8,8 @@ export default {
                 <li v-for="book in books" :key="book.id" >
                     <book-preview :book="book"/>
                         <!-- <button @click.stop="remove(book.id)">x</button> -->
-                        <router-link :to="'/book/' + book.id">Details</router-link> |
-                        <router-link :to="'/book/edit/' + book.id">Edit</router-link> |
+                        <router-link :to="'/book/' + book.id">Details</router-link> 
+                        <router-link :to="'/book/edit/' + book.id">Edit</router-link> 
                         <button @click="remove(book.id)">x</button>
                 </li>
             </ul>

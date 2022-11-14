@@ -1,18 +1,18 @@
+
+
 export default {
     template: `
         <section class="book-filter">
-            Filters:
             <label class="text-filter">
-                <input v-model="filterBy.title" @input="filter"  type="text" placeholder="search by name">
+                <h1> Filter</h1>  
+                <input v-model="filterBy.title" @input="filter"  type="text" placeholder="Filter by name">
             </label>
-            <label class="text-filter">
-                Min price:
-                <input v-model="filterBy.fromPrice" @input="filter"  type="number" placeholder="From price">
-            </label>
-            <label class="text-filter">
-                Max price:
-                <input v-model="filterBy.toPrice"  @input="filter" class="maxPrice-filter-input" type="number" placeholder="set price">
-            </label>
+            <label>
+                    Min Price:
+                    <input type="range" @input="filter" v-model.number="filterBy.fromPrice"
+                        min="0" max="200" />
+                        <span>{{filterBy.fromPrice}}</span>
+                </label>
         </section>
     `,
     data() {
@@ -27,6 +27,14 @@ export default {
     methods: {
         filter() {
             this.$emit('filter', { ...this.filterBy })
+        }
+    },
+    watch: {
+        filterBy:{
+            handler(){
+                console.log('Something changed')
+            },
+            deep: true
         }
     }
 }

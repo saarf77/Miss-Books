@@ -1,5 +1,7 @@
 import { bookService as bookService } from "../services/book-service.js"
-import { eventBus } from "../services/event-bus.service.js"
+// import { eventBus } from "../services/event-bus.service.js"
+import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
+
 
 export default {
     template: `
@@ -23,7 +25,7 @@ export default {
             bookService.get(bookId)
                 .then(book => this.bookToEdit = book)
         } else {
-            this.bookToEdit = bookService.getEmptyBook()
+            this.bookToEdit = bookService._createBook
         }
     },
     mounted(){
@@ -37,15 +39,12 @@ export default {
             // this.carToEdit = carService.getEmptyCar()
             bookService.save(this.bookToEdit)
                 .then(book => {
-                    // this.$emit('saved', car)
-                    // this.carToEdit = carService.getEmptyCar()
-                    const msg = {
-                        txt: `book saved ${book.id}`,
-                        type: 'success',
-                        timeout: 4000,
-                    }
-                    eventBus.emit('user-msg', msg)
+                    showSuccessMsg(`Book saved (book id: ${book.id})`)
                     this.$router.push('/book')
+                })
+                .catch(err => {
+                    console.log('OOps:', err)
+                    showErrorMsg(`Cannot save book`)
                 })
         }
     }

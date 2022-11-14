@@ -1,31 +1,31 @@
-.book-details button{
-    justify-self: end;
-}
-.book-details img{
-    width: 150px;
-    display: flex;
-    justify-self: end;
-    transition: rotate 1s;
-}
+
 
 .book-details {
+
     display: grid;
+    place-items:center;
     text-align: center;
     background-color: #14213dff;
     padding: 10px;
-    margin-block-end: 10px;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 6em;
+    height: 90vh;
+    overflow: auto;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100% 1fr;
+    gap: 0px;
 }
+
+
+
 .book-details button{
     justify-self: end;
 }
 .book-details img{
-    display: grid;
-    width: 170px;
-    justify-self: center;
+    width: 20vw;
+    height: 50vh;
     transition: rotate 1s;
     margin-bottom: 0;
 }
@@ -55,7 +55,7 @@
 }
 
 .main-details{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .long-text{
@@ -81,7 +81,6 @@ margin: 15px;
 .actions {
     justify-self: end;
 }
-
 
 .book-edit {
     background-color: rgb(106, 126, 132);

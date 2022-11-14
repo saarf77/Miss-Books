@@ -1,0 +1,28 @@
+.book-details .book-reviews {
+    display: grid;
+    overflow: auto;
+    justify-self: stretch;
+    grid-column: span 3;
+    padding: 10px;
+}
+
+.book-reviews ul {
+    list-style-type: none;
+}
+
+.book-reviews ul li {
+    padding: 7px;
+    background-color: var(--light-cyan);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.book-reviews ul .comment {
+    display: flex;
+    justify-content: space-around;
+}
+.book-reviews .comment button {
+    justify-self: end;
+}

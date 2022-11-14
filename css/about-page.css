@@ -1,0 +1,59 @@
+/* body */
+
+* {
+    box-sizing: border-box;
+}
+
+.about-page {
+    min-height: 90vh;
+    text-align: center;
+    background-image: url(../img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    padding: 10px;
+}
+
+.about-title {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #14213dff;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+.about-page p{
+    background-color: aliceblue;
+    text-align: center;
+    color: #14213dff;
+    font-weight: 500;
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+    font-size: 1.3em;
+    padding: 8px;
+    border: 1px solid #14213dff ;
+}
+
+/* .user-msg {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+
+    width: 290px;
+    background-color: rgb(208, 206, 139);
+    padding: 10px;
+    border-radius: 5px;
+}
+.success {
+    background-color: rgb(88, 130, 88);
+}
+.fail {
+    background-color: rgb(187, 104, 104);
+}
+   */

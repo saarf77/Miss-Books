@@ -1,0 +1,31 @@
+/* body */
+
+* {
+    box-sizing: border-box;
+}
+
+.home-page {
+    min-height: 90vh;
+    text-align: center;
+    background-image: url(../img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    padding: 10px;
+}
+
+.welcome-title {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #e5e5e5ff;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    background-color: #14213dff;
+    opacity: .8;
+}

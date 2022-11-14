@@ -1,0 +1,89 @@
+.book-details button{
+    justify-self: end;
+}
+.book-details img{
+    width: 150px;
+    display: flex;
+    justify-self: end;
+    transition: rotate 1s;
+}
+
+.book-details {
+    display: grid;
+    text-align: center;
+    background-color: #14213dff;
+    padding: 10px;
+    margin-block-end: 10px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+.book-details button{
+    justify-self: end;
+}
+.book-details img{
+    display: grid;
+    width: 170px;
+    justify-self: center;
+    transition: rotate 1s;
+    margin-bottom: 0;
+}
+
+.book-details img:hover{
+    rotate: -10deg;
+}
+
+.book-details > *{
+   margin: 10px auto;
+   background-color: #e5e5e5ff;
+}
+
+.books-img{
+    display: flex;
+    gap: 10px;
+}
+
+.sale{
+    height: 100%;
+}
+
+.title{
+    font-size: 2em;
+    color: #f07167;
+    margin-bottom: .4em;
+}
+
+.main-details{
+    font-size: 1.3em;
+}
+
+.long-text{
+margin: 15px;
+    
+}
+
+.close-btn{
+    margin-top:10px;
+}
+
+.category{
+    margin-top: .2em;
+}
+
+.cheap{
+    color: green;
+}
+.expensive{
+    color: red;
+}
+
+.actions {
+    justify-self: end;
+}
+
+
+.book-edit {
+    background-color: rgb(106, 126, 132);
+    padding: 10px;
+}

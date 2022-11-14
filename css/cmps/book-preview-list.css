@@ -1,0 +1,35 @@
+.book-preview img{
+    width: 100%;
+    display: flex;
+    transition: rotate 1s;
+}
+
+.book-preview img:hover{
+   rotate: -5deg;
+   cursor: pointer;
+}
+
+.book-list{
+    padding: 30px;
+    padding-top: 10px;
+}
+.book-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    list-style-type: none;
+    background-color: #e5e5e5ff;
+    padding: 10px;
+}
+.book-list ul li {
+    display: grid;
+    background-color: #f07167;
+    padding: 10px;
+}
+.book-list button {
+    margin-block-end: 0;
+    margin-inline-end: 0;
+    /* justify-self: flex-end; */
+    justify-self: end;
+    /* position:absolute */
+}

@@ -14,7 +14,7 @@ export default {
                 <ul class="google-books-list" v-if="googleBooks">
                     <li v-for="book in googleBooks">
                         <h2>{{ book.title }}</h2>
-                        <button @click="add(book.id)" class="add-book-btn"></button>
+                        <button @click="add(book.id)" class="add-book-btn">+</button>
                     </li>
                     
                 </ul>

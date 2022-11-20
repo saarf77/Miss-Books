@@ -26,12 +26,23 @@
 .google-books-list li {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    /* margin: 20px; */
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    padding: 10px;
+    border-bottom: #f07167 .1px solid;
+    cursor: pointer;
 }
+
+.google-books-list li:hover {
+background-color: rgb(59, 73, 107);}
 
 .add-book-btn{
     background-color: transparent;
     font-size: 1.2em;
+}
+.add-book-btn:hover{
+    background-color:  rgb(121, 135, 171);
 }
 
 .google-form{

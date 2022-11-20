@@ -8,9 +8,10 @@ export default {
                 <li v-for="book in books" :key="book.id" >
                     <book-preview :book="book"/>
                         <!-- <button @click.stop="remove(book.id)">x</button> -->
-                        <router-link :to="'/book/' + book.id">Details</router-link> 
-                        <router-link :to="'/book/edit/' + book.id">Edit</router-link> 
-                        <button @click="remove(book.id)">x</button>
+                        
+                        <router-link :to="'/book/' + book.id"><button class="btn">Details </button> </router-link> 
+                        <router-link :to="'/book/edit/' + book.id"><button class="btn">Edit</button> </router-link> 
+                        <button class="btn" @click="remove(book.id)">X</button>
                 </li>
             </ul>
         </section>
